@@ -20,6 +20,17 @@ namespace SusImposter
 
 	}
 
+	void ReadFromFile()
+	{
+		std::string fileContent;
+		std::ifstream openFile("minfil.txt");
+		while (std::getline(openFile, fileContent))
+		{
+			std::cout << "Filecontent: " << fileContent << "\n";
+		}
+		openFile.close();
+	}
+
 	
 }
 
@@ -30,4 +41,5 @@ int main()
 {
 	SusImposter::print(123);
 	SusImposter::WriteToFile("minfile.txt");
+	SusImposter::ReadFromFile();
 }
