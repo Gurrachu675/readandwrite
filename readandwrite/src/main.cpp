@@ -3,11 +3,13 @@
 #include<string>
 namespace SusImposter 
 {
+	//templat print function
 	template <typename T>
 	void print(T t)
 	{
 		std::cout << t << "\n";
 	}
+	//wtites to textfiles
 	void WriteToFile(std::string filePath)
 	{
 		std::ofstream file(filePath);
